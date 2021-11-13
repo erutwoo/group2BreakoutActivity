@@ -1,9 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Destination</title>
+    <link rel="stylesheet" href="/static/mapstyle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
 <body>
+  <br><br><br><br><br>
+   <section id="section-feature" class="container">
+    <div class="row">
+        <ul>
+            <h2 style="font-family:  'Poppins', sans-serif;">This is the Map for Destination</h2>
+            <li id="sf-academy" class="col-md-10 col-sm-6 col-xs-12">
+                <div class="sf-wrap">
+                    <div class="sf-mdl-right">
+                        <h3 2 style="font-family:  'Poppins', sans-serif;">Map Destination</h3>
+                    </div>
+                    <div class="sf-mdl-right-full">
+                        <img src="static/image.jpg" alt="Trulli">
+                    </div>      
+                </div>
+            </li>
 
-<h2>Map for the Destination</h2>
-<img src="/static/image.jpg" alt="Trulli" width="500" height="333">
 
+        </ul>
+    </div>
+</section> 
+<script>
+    $(function () {
+    $('#section-feature .sf-wrap')
+        .hover(function() {
+            $(this).addClass('hover');
+        }, function() {
+            $(this).removeClass('hover');
+        })
+        .click(function(event) {
+            //if (event.target.nodeName != 'A') {
+                $(this).toggleClass('active');
+            //}
+        });
+});
+    
+</script>
 </body>
 </html>

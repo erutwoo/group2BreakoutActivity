@@ -15,7 +15,7 @@
 		<div>
 			<form class="form-container sign-up-container" action="{% url 'devops:submit' %}" method="post">
 				{% csrf_token %}
-				<h1>Destination</h1>
+				<h1>Destination</h1>	
 				<span>Fill up the necessary information</span>
 				<input type="text" name='orig' placeholder="Input Starting Location" />
 				<input type="text" name='dest' placeholder="Input Final Location" />
